@@ -1,0 +1,159 @@
+:root {
+    --cor-primaria: #66f;
+    --cor-secundaria: orange;
+    --cor-ancora: #66f;
+    --cor-fundo: rgb(85, 91, 131);
+}
+
+.l-nav {
+    width: 90%;
+    margin: auto;
+    /* border-width: 1px; */
+}
+
+h2{
+    padding: 10px;
+}
+
+body {
+    background-color: #c3e9bd;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.pedidos__btn {
+    border-radius: 5% !important;
+    border-width: 0;
+    padding: 10px;
+    font-size: x-small;
+    color: white;
+    background-color: var(--cor-primaria);
+    &:hover {
+        background-color: var(--cor-secundaria);
+        cursor: pointer;
+    }
+}
+
+.cancelar_pedido_btn{
+    border-radius: 5% !important;
+    border-width: 0;
+    margin: 10px;
+    padding: 10px;
+    font-size: x-small;
+    color: white;
+    background-color: red;
+    &:hover {
+        background-color: rgb(179, 30, 30);
+        cursor: pointer;
+    }
+}
+
+#apagar{
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+   &:hover{
+    background-color: rgb(48, 47, 47);
+    cursor: pointer;
+   }
+}
+
+.pedidos__qtd {
+    &::before {
+        content: " x ";
+    }
+}
+
+.l-nav {
+    background-color: var(--cor-fundo);
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav__link {
+
+    background: linear-gradient(to top, gray, white);
+    border-top-color: var(--cor-secundaria);
+    border-top-width: 0.25rem;
+    border-top: 10px;
+    border-radius: 10%;
+    padding: 0.5rem;
+    text-decoration: none;
+    &:hover {
+        background-color: var(--cor-secundaria);
+    }
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    
+}
+
+.titulo__head {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: medium;
+    
+}
+
+
+.descricao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-style: italic;
+    
+}
+
+.titulo__preco {
+    font-size: small;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10px;
+    &::before {
+        content: "R$ ";
+    }
+}
+
+.titulo__preco{
+    display: flex;
+}
+
+
+.prato {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+#total-comanda {
+    font-weight: bolder;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+.rodape {
+    background-color: rgb(253, 187, 44);
+    padding: 5px;
+    text-align: center;
+}
